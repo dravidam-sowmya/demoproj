@@ -24,7 +24,7 @@ export class AppComponent {
     Name : 'employeeName',
     Address : 'employeeAddress',
     MobileNumber : 'employeeMobileNumber',
-    Id:' employeeId',
+    Id:'employeeId',
     Designation : 'employeeDesignation',
     Department : 'employeeDept',
     Report : 'employeeReportingTo',

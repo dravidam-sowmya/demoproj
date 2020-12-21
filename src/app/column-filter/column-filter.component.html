@@ -1,9 +1,9 @@
 <div>
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12" style="width: 500px;height: 500px; margin-right: 50%;">
                 <div>
-<h2>Columns</h2>
+<h2>Details</h2>
                 <div 
                 cdkDropList 
                 #columnList="cdkDropList" 
@@ -13,10 +13,10 @@
                 (cdkDropListDropped)="onDrop($event)">
                 <div class="column-block" *ngFor="let column of columList" cdkDrag>{{column}}</div>
               </div>
-                </div>
+                </div><br>
                 <div>
                     <div class="container">
-                        <h2>Selected Columns</h2>
+                        <h2>Selected Details</h2>
                         <div 
                         cdkDropList 
                         #selectedColumns="cdkDropList" 
@@ -27,14 +27,11 @@
                         <div class="column-block" *ngFor="let selectedColumn of selectedColumnsToDisplay" cdkDrag>{{selectedColumn}}</div>
                       </div>
                       </div>
+                </div><br>
+                <div>
+                  <button  (click)="closeModal()">Close</button>    
                 </div>
-                
               </div> 
             </div>
-        </div>
-
-        
-        
-      
-<button (click)="closeModal()">Close</button>    
+        </div>      
 </div>
