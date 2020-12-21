@@ -16,7 +16,8 @@ import { ColumnFilterComponent } from './column-filter/column-filter.component';
     BrowserModule,
     AppRoutingModule,
     DragDropModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent],
