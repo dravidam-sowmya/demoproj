@@ -1,7 +1,22 @@
 <div style="background-color:cadetblue">
     <div>
-      <h2>  Employee Details
+      <h2>   Details
       </h2><br>
+      <div>
+<select name="name" id="name"  (change)="OnSelectionChange($event)">
+  <option ngValue="namesList.name" *ngFor="let namesList of listOfDetails">{{namesList.name}}</option>
+</select>
+
+      </div><br>
+      <div> 
+        <p>Model Name: {{ResultModel}}</p>
+        <p>Manufacturer : {{manufacturer}}</p>
+        <p>Created : {{created}}</p>
+        <p>Max_atmosphering_speed : {{maxAtmospheringSpeed}}</p>
+        <p>Consumables : {{consumables}}</p>
+        <p>Cargo_capacity : {{cargoCapacity}}</p>
+
+      </div>
       <ng-container *ngIf="(listOfColumnsToDisplay | async) as columnsList">
         <table>
           <tr>
