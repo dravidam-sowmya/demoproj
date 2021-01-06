@@ -5,12 +5,11 @@ import { MatDialogModule,} from '@angular/material/dialog';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ColumnFilterComponent } from './column-filter/column-filter.component';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
-    AppComponent,    ColumnFilterComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
@@ -22,7 +21,6 @@ import { HttpClientModule } from '@angular/common/http';
   ],
   providers: [],
   bootstrap: [AppComponent],
-  entryComponents: [ColumnFilterComponent],
   schemas:[CUSTOM_ELEMENTS_SCHEMA,NO_ERRORS_SCHEMA]
   
 })
